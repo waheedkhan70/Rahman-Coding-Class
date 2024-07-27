@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Best Coding in Khalilabad | Rahman Coding Classes.com</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="rcc.css">
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 
@@ -18,6 +18,7 @@
 
 
 
+
 <style type="text/css" media="all">
   
   
@@ -26,507 +27,600 @@
   
   
 
-.open-button {
-  background-color: maroon;
-  color: white;
-  
-  border: 2px solid white;
-  cursor: pointer;
-opacity: 0.8;
-  position: absolute;
-  bottom: 23px;
-  right: 28px;
-  width: 80px;
-font-size: 13px;
-    padding: 10px 4px;
-    margin: 1800px 30px;
-}
-  
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-  
-  
-  
-  
-  
-  
-  
-/* Navigation */
-#navbar {
-    flex-direction: column;
-}
-
-#navbar ul li a{
-    font-size: 1rem;
-    padding: 0px 7px;
-    padding-bottom: 8px;
-}
-/* Home section */
-#home{
-    height: 370px; 
-    padding: 3px 28px;
-}
-
-#home::before{
-    height: 480px; 
-}
-
-#home p{
+    .open-button {
+      background-color: maroon;
+      color: white;
+      
+      border: 2px solid white;
+      cursor: pointer;
+    opacity: 0.8;
+      position: absolute;
+      bottom: 23px;
+      right: 28px;
+      width: 80px;
     font-size: 13px;
-}
+        padding: 10px 4px;
+        margin: 1800px 30px;
+    }
+      
+    
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+    
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+      
+      
+      
+      
+      
+      
+      
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+    }
+    
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+    /* Home section */
+    #home{
+        height: 370px; 
+        padding: 3px 28px;
+    }
+    
+    #home::before{
+        height: 480px; 
+    }
+    
+    #home p{
+        font-size: 13px;
+    }
+    
+    /* Services section  */
+    #services{
+        flex-direction: column;
+    }
+    
+    #services .box { 
+        padding: 14px;
+        margin: 2px 0px; 
+        margin-bottom: 20px;
+    }
+    
+    /* Clients section */
+    #clients{
+        flex-wrap: wrap;
+    }
+    
+    #clients img{
+        width: 66px;
+        padding: 6px;
+        height: auto;
+    }
+    
+    /* Contact us section */
+    #contact-box form{
+        width:80%;
+    }
+    /* Footer */
+    
+    /* Utility classes */
+    .h-primary{
+        font-size:26px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    
+    
+    /* CSS Reset */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    /* CSS Variables */
+    :root{
+        --navbar-height: 59px;
+    }
+    
+    /* Navigation Bar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        
+    }
+    
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 1;
+    }
+    
+    /* Navigation Bar: Logo and Image */
+    #logo{
+        margin: 10px 34px;
+        align-items: left;
+    }
+    
+    #logo img{
+        height: 59px;
+        margin: 3px 6px;
+        border-radius: 8px;
+        border: 4px solid rgb(115, 114, 114);
+        
+        
+    }
+    
+    
+    /* Navigation Bar: List Styling */
+    
+    #navbar ul{
+        display: flex;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    
+    #navbar ul li{ 
+        list-style: none;
+        font-size: 1.3rem;
+      
+    }
+    
+    #navbar ul li a{
+        color: rgb(55, 233, 94);
+        display: block;
+        padding: 6px 22px;
+        padding-bottom: 8px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+        color: black;
+        background-color: rgb(60, 225, 68);
+    }
+    
+    /* Home Section */
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding:3px 200px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+    
+    #home::before{ 
+        content: "";
+        position: absolute;
+        background: url('./images/img18.1.png') no-repeat center center/cover;
+        height: 642px;
+        top:0px;
+        left:0px;
+        width: 100%;
+        z-index: -1;
+        opacity:1;
+    }
+    
+    #home h1{
+        color:rgb(72, 221, 58);
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    #home p{
+        color:white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+    /* Services Section */
+    #services{
+        margin: 34px;
+        display: flex;
+    }
+    
+    
+    
+    #services .box{ 
+        border: 4px solid rgb(115, 114, 114);
+        padding: 34px;
+        margin: 2px 55px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+        background: url('./images/img26.jpg!w700wp') no-repeat;
+        background-size: cover;
+       
+    
+    }
+    
+    #services .box img{ 
+       height: 160px;
+       margin: auto;
+       display: block;
+       border-radius: 100px;
+       border-color: #fbfbfb;
+    }
+    
+    #services .box p{
+        font-family: 'Bree Serif', serif;
+    
+    } 
+    
+    #services-container{
+        background-color: #353535;
+        color: blanchedalmond;
+    }
+    
+    
+    
+    
+    
+    
+    /* cources Section */
+    #cources-section{ 
+        position: relative;
+    }
+    
+    #cources-section::before{
+     content: "";
+     position: absolute;
+     background: url('./images/img19.png');
+     /* background-color: blanchedalmond; */
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 1;
+    }
+    
+    #cources{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cources-item{
+        padding: 100px;
+        margin-bottom: 500px
+    }
+    
+    /* #cources img{
+        height: 80px;
+        width: 100px;
+        border-radius: 15px;
+    } */
+    
+    
+    #cources .cbox{ 
+        border: 4px solid rgb(115, 114, 114);
+        padding: 1px;
+        margin: 1px 10px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+        /* background: url('./images/img26.jpg!w700wp') no-repeat;
+        background-size: cover; */
+        background-color: #ddd;
+        height: 2230px;
+        width: 330px;
+       
+    
+    }
+    
+    #cources .cbox img{ 
+       height: 100px;
+       width: 100px;
+       margin: auto;
+       display: block;
+       border-radius: 10px;
+       border-color: #fbfbfb;
+    }
+    
+    #cources .cbox p{
+        font-family: 'Bree Serif', serif;
+    
+    } 
+    #cources-container{
+        /* background-color: #353535; */
+        color: blanchedalmond;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Clients Section */
+    #client-section{ 
+        position: relative;
+    }
+    
+    #client-section::before{
+     content: "";
+     position: absolute;
+     background: url('./images/img17.webp');
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.9;
+    }
+    
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .client-item{
+        padding: 100px;
+        margin-bottom: 500px
+    }
+    
+    #clients img{
+        height: 80px;
+        width: 100px;
+        border-radius: 15px;
+    }
+    
+    
+    /* Contact Section */
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('./images/img10.jpeg') no-repeat ;
+        background-size: cover;
+    
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box input, 
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    } 
+    
+    #contact-box form{
+        width: 40%;
+    }
+    
+    #contact-box label{
+       font-size: 1.3rem;
+       font-family: 'Bree Serif', serif;
+    
+    }
+    
+    
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    
+    /* Utility Classes */
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+        font-size: 3.8rem;
+        padding: 12px;
+    }
+    
+    .h-secondary{
+        font-family: 'Bree Serif', serif;
+        font-size: 2.3rem;
+        padding: 12px;
+    }
+    
+    .h-third{
+        font-family: 'Bree Serif', serif;
+        font-size: 2.3rem;
+        padding: 12px;
+        color: #04AA6D;
+    }
+    
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(45, 236, 64);
+        color: rgb(27, 16, 16);
+        margin: 25px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor:pointer;
+        box-shadow: 6px 3px 20px 10px;
+        text-decoration: none;
+    }
+    
+    .btn:hover{
+        background-color: #92beae;
+        color: #2a2828;
+    }
+    
+    
+    .center{
+        text-align: center;
+       
+    }
+    
+    
+    
+    
+    
+    /* 
+    
+    
+    
+    
+    
+    
+    
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    
+    
+    
+    
+    
+    .btn button:first-child{
+      background: #1da1f2;
+    }
+    .btn button:last-child{
+      background: blueviolet;
+    }
+    .btn button:first-child:hover{
+      background: transparent;
+      border: 1px solid #1da1f2;
+      color: #1da1f2;
+    }
+    .btn button:last-child:hover{
+      background: transparent;
+      border: 1px solid blueviolet;
+      color: blueviolet;
+    }
+    
+    
+    
+    
+    
+    
+    .icons a:first-child{
+      background: blue;
+    }
+    .icons a:nth-child(2){
+      background: rgb(158, 21, 117);
+    }
+    .icons a:nth-child(3){
+      background: red;
+    }
+    .icons a:nth-child(4){
+      background: black;
+    }
+    .icons a:nth-child(5){
+      background: blueviolet;
+    }
+    
+    
+    .icons a:hover{
+      color: black;
+      background: transparent;
+      border: 1px solid black;
+    }
+    
+     */
+    
+    
+    
+    
+    </style>
 
-/* Services section  */
-#services{
-    flex-direction: column;
-}
-
-#services .box { 
-    padding: 14px;
-    margin: 2px 0px; 
-    margin-bottom: 20px;
-}
-
-/* Clients section */
-#clients{
-    flex-wrap: wrap;
-}
-
-#clients img{
-    width: 66px;
-    padding: 6px;
-    height: auto;
-}
-
-/* Contact us section */
-#contact-box form{
-    width:80%;
-}
-/* Footer */
-
-/* Utility classes */
-.h-primary{
-    font-size:26px;
-}
-.btn{
-    font-size: 13px;
-    padding: 4px 8px;
-}
-
-
-/* CSS Reset */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-/* CSS Variables */
-:root{
-    --navbar-height: 59px;
-}
-
-/* Navigation Bar */
-#navbar{
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-}
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-/* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
-}
-
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
-    border-radius: 8px;
-    border: 4px solid rgb(115, 114, 114);
-}
-
-
-/* Navigation Bar: List Styling */
-
-#navbar ul{
-    display: flex;
-    font-family: 'Baloo Bhai', cursive;
-}
-
-#navbar ul li{ 
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a{
-    color: rgb(55, 233, 94);
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: rgb(60, 225, 68);
-}
-
-/* Home Section */
-#home{
-    display: flex;
-    flex-direction: column;
-    padding:3px 200px;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-}
-
-#home::before{ 
-    content: "";
-    position: absolute;
-    background: url('./images/img18.webp') no-repeat center center/cover;
-    height: 642px;
-    top:0px;
-    left:0px;
-    width: 100%;
-    z-index: -1;
-    opacity:0.89;
-}
-
-#home h1{
-    color:rgb(72, 221, 58);
-    text-align: center;
-    font-family: 'Bree Serif', serif;
-}
-
-#home p{
-    color:white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
-}
-/* Services Section */
-#services{
-    margin: 34px;
-    display: flex;
-}
-
-
-
-#services .box{ 
-    border: 4px solid rgb(115, 114, 114);
-    padding: 34px;
-    margin: 2px 55px;
-    border-radius: 28px;
-    margin-bottom: 20px;
-    background: url('./images/img26.jpg!w700wp') no-repeat;
-    background-size: cover;
-   
-
-}
-
-#services .box img{ 
-   height: 160px;
-   margin: auto;
-   display: block;
-   border-radius: 100px;
-   border-color: #fbfbfb;
-}
-
-#services .box p{
-    font-family: 'Bree Serif', serif;
-
-} 
-
-#services-container{
-    background-color: #353535;
-    color: #c8b3b3;
-}
-
-/* Clients Section */
-#client-section{ 
-    position: relative;
-}
-
-#client-section::before{
- content: "";
- position: absolute;
- background: url('./images/img17.webp');
- width: 100%;
- height: 100%;
- z-index: -1;
- opacity: 0.9;
-}
-
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-item{
-    padding: 100px;
-    margin-bottom: 500px
-}
-
-#clients img{
-    height: 80px;
-    width: 100px;
-    border-radius: 15px;
-}
-
-
-/* Contact Section */
-#contact{
-    position: relative;
-}
-#contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    background: url('./images/img10.jpeg') no-repeat ;
-    background-size: cover;
-
-}
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-#contact-box input, 
-#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-} 
-
-#contact-box form{
-    width: 40%;
-}
-
-#contact-box label{
-   font-size: 1.3rem;
-   font-family: 'Bree Serif', serif;
-
-}
-
-
-footer{
-    background: black;
-    color: white;
-    padding: 9px 20px;
-}
-
-/* Utility Classes */
-.h-primary{
-    font-family: 'Bree Serif', serif;
-    font-size: 3.8rem;
-    padding: 12px;
-}
-
-.h-secondary{
-    font-family: 'Bree Serif', serif;
-    font-size: 2.3rem;
-    padding: 12px;
-}
-
-.btn{
-    padding: 6px 20px;
-    border: 2px solid white;
-    background-color: rgb(45, 236, 64);
-    color: rgb(27, 16, 16);
-    margin: 25px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    cursor:pointer;
-    box-shadow: 6px 3px 20px 10px;
-}
-
-.btn:hover{
-    background-color: #92beae;
-    color: #2a2828;
-}
-
-
-.center{
-    text-align: center;
-   
-}
-
-
-
-
-
-/* 
-
-
-
-
-
-
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-
-
-
-
-.btn button:first-child{
-  background: #1da1f2;
-}
-.btn button:last-child{
-  background: blueviolet;
-}
-.btn button:first-child:hover{
-  background: transparent;
-  border: 1px solid #1da1f2;
-  color: #1da1f2;
-}
-.btn button:last-child:hover{
-  background: transparent;
-  border: 1px solid blueviolet;
-  color: blueviolet;
-}
-
-
-
-
-
-
-.icons a:first-child{
-  background: blue;
-}
-.icons a:nth-child(2){
-  background: rgb(158, 21, 117);
-}
-.icons a:nth-child(3){
-  background: red;
-}
-.icons a:nth-child(4){
-  background: black;
-}
-.icons a:nth-child(5){
-  background: blueviolet;
-}
-
-
-.icons a:hover{
-  color: black;
-  background: transparent;
-  border: 1px solid black;
-}
-
- */
-
-
-
-
-</style>
 
 
 
@@ -538,18 +632,28 @@ footer{
         <ul>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#services-container">Educators</a></li>
-            <li class="item"><a href="#client-section">about</a></li>
+            <li class="item"><a href="#cources-section">Cources</a></li>
+            <li class="item"><a href="#client-section">clients</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
     <section id="home">
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
         <h1 class="h-primary">Rahman Coding Classes</h1>
+        <br>
+        <br>
         <span><b>Choosing The right</b></span>
         <h2><b>Coding Classes</b></h2>
         <span><b>Is Same Like Giving</b></span>
         <h2><b>The Best Future</b></h2>
         <span><b>To Your Child</b></span>
+        <br>
+    
 
         <!-- <button    class="btn">
            
@@ -608,6 +712,190 @@ footer{
 
 
     </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="cources-section">
+        <h1 class="h-primary center">Cources</h1>
+        <div id="cources">
+
+        
+            <div class="cbox">
+                <h2 class="h-secondary center"><i>FrontEnd</i> </h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Basics</i> </h3>
+                <img src="./images/html.webp" alt="">
+                <br>
+                <img src="./images/css.png" alt="">
+                <br>
+                <img src="./images/js.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="h-third center"><i>FrameWorks</i> </h2>
+                <img src="./images/react.avif" alt="">
+                <br>
+                <img src="./images/vue.webp" alt="">
+                <br>
+                <img src="./images/angular.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="h-third center"><i>Styles</i> </h2>
+                <img src="./images/material ui.png" alt="">
+                <br>
+                <img src="./images/bootstrap.jpeg" alt="">
+
+                </div>
+           
+
+
+            
+            <div class="cbox">
+                <h2 class="h-secondary center"><i>BackEnd</i> </h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Technology</i> </h3>
+                <img src="./images/python.jpg" alt="">
+                <br>
+                <img src="./images/node js.png" alt="">
+                <br>
+                <img src="./images/redis.webp" alt="">
+                <br>
+                <img src="./images/php.png" alt="">
+                <br>
+                <img src="./images/java.jpg" alt="">
+                <br>
+                <img src="./images/ASP.NET.avif" alt="">
+                <br>
+                <img src="./images/ruby-rails.jpg" alt="">
+                </div>
+           
+              
+            <div class="cbox">
+                <h2 class="h-secondary center"><i>DataBase</i> </h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>RDBMS</i> </h3>
+                <img src="./images/mssql.jpg" alt="">
+                <br>
+                <img src="./images/mysql.webp" alt="">
+                <br>
+                <img src="./images/postgres.webp" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>No SQL</i> </h3>
+                <img src="./images/mongo.gif" alt="">
+                <br>
+                <img src="./images/couchDB.png" alt="">
+                <br>
+                <img src="./images/cassandra.png" alt="">
+                <br>
+                <img src="./images/elasticsearch.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Graph</i> </h3>
+                <img src="./images/neo4j.jpg" alt="">
+                <br>
+                <img src="./images/arangodb.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Message Queue</i> </h3>
+                <img src="./images/kafka.webp" alt="">
+                <br>
+                <img src="./images/sqs.png" alt="">
+                <br>
+                <img src="./images/zeromq.jpeg" alt="">
+                <br>
+                <img src="./images/rabbitmq.png" alt="">
+                </div>
+           
+              
+            <div class="cbox">
+                <h2 class="h-secondary center"><i>DevOps</i> </h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Infrastructure</i> </h3>
+                <img src="./images/nginx.jpg" alt="">
+                <br>
+                <img src="./images/aws.jpg" alt="">
+                <br>
+                <img src="./images/azure.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Automation</i> </h3>
+                <img src="./images/ansible.png" alt="">
+                <br>
+                <img src="./images/chef.png" alt="">
+                <br>
+                <img src="./images/jenkins.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="h-third center"><i>Virtualization</i> </h3>
+                <img src="./images/docker.webp" alt="">
+                <br>
+                <img src="./images/kubernate.png" alt="">
+                <br>
+                <img src="./images/vagrant.avif" alt="">
+                <br>
+                <img src="./images/vmware.jpeg" alt="">
+                </div>
+
+           
+
+        </div>
+
+    </section>
+
+
+
+
+
+
 
 
 
