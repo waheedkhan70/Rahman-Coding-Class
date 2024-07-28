@@ -129,12 +129,12 @@
         font-size: 13px;
     }
     
-    /* Services section  */
-    #services{
+    /* educators section  */
+    #educators{
         flex-direction: column;
     }
     
-    #services .box { 
+    #educators .box { 
         padding: 14px;
         margin: 2px 0px; 
         margin-bottom: 20px;
@@ -186,18 +186,19 @@
     #navbar{
         display: flex;
         align-items: center;
-        position: sticky;
+        position: absolute;
         top: 0px;
+        margin: 46px 2px;
         
     }
     
     #navbar::before{
         content: "";
-        background-color: black;
+        /* background-color: black; */
         position: absolute;
         top:0px;
         left:0px;
-        height: 100%;
+        height: 136px;
         width:100%;
         z-index: -1;
         opacity: 1;
@@ -210,13 +211,15 @@
     }
     
     #logo img{
-        height: 59px;
+        height: 80px;
         margin: 3px 6px;
-        border-radius: 8px;
-        border: 4px solid rgb(115, 114, 114);
+        border-radius: 50px;
+        border: 4px solid rgb(0, 0, 0);
         
         
     }
+
+    
     
     
     /* Navigation Bar: List Styling */
@@ -224,7 +227,7 @@
     #navbar ul{
         display: flex;
         font-family: 'Baloo Bhai', cursive;
-    
+        margin: -8px 400px;
     }
     
     #navbar ul li{ 
@@ -234,7 +237,7 @@
     }
     
     #navbar ul li a{
-        color: rgb(55, 233, 94);
+        color: rgb(209, 106, 106);
         display: block;
         padding: 6px 22px;
         padding-bottom: 8px;
@@ -245,6 +248,8 @@
     #navbar ul li a:hover{
         color: black;
         background-color: rgb(60, 225, 68);
+        height: 25px;
+
     }
     
     /* Home Section */
@@ -261,7 +266,7 @@
     #home::before{ 
         content: "";
         position: absolute;
-        background: url('./images/img18.1.png') no-repeat center center/cover;
+        background: url('./images/img18.2.png') no-repeat center center/cover;
         height: 642px;
         top:0px;
         left:0px;
@@ -282,47 +287,112 @@
         font-size: 1.5rem;
         font-family: 'Bree Serif', serif;
     }
-    /* Services Section */
-    #services{
+    /* educators Section */
+    #educators{
         margin: 34px;
         display: flex;
+        
     }
     
     
-    
-    #services .box{ 
-        border: 4px solid rgb(115, 114, 114);
+ 
+    #educators .box{ 
+        border: 4px solid rgb(101, 33, 33);
         padding: 34px;
-        margin: 2px 55px;
+        margin: 2px 830px;
         border-radius: 28px;
         margin-bottom: 20px;
-        background: url('./images/img26.jpg!w700wp') no-repeat;
-        background-size: cover;
-       
+        background-color: rgba(0, 0, 0, 0.8);
+       width: 300px;
+      flex-direction: row;
+      display: flex;
     
     }
+
+    #educators .box:hover{ 
+        border: 4px solid rgb(3, 155, 16);
+        padding: 34px;
+        margin: 2px 830px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+        background-color: rgba(219, 241, 222, 0.8);
+       width: 300px;
+      flex-direction: row;
+      display: flex;
+      cursor: pointer;
+     
     
-    #services .box img{ 
+    }
+     
+    #educators .box img{ 
        height: 160px;
        margin: auto;
        display: block;
        border-radius: 100px;
        border-color: #fbfbfb;
+       align-items: end;
+       
     }
     
-    #services .box p{
+    #educators .box p{
         font-family: 'Bree Serif', serif;
     
     } 
     
-    #services-container{
-        background-color: #353535;
+    #educators-container{
+        background: url('./images/img19.png') no-repeat;
+        background-size: cover;
         color: blanchedalmond;
+        display: grid;
+        opacity: 0.8;
+    }
+
+    .h-primary-edu{
+        font-family: 'Bree Serif', serif;
+        font-size: 3.8rem;
+        margin-right: 554px;
+        color: blanchedalmond;
+        
     }
     
+    .h-secondary-edu{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.2rem;
+        padding: 12px;
+        color: #f96161;
+    }
+
+    .h-secondary-edu:hover{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.2rem;
+        padding: 12px;
+        color: #2fea2c;
+    }
+
+
     
+    /* .wbox{
+        padding: 69px 74px;
+        margin-bottom: -319px;
+        height: 350px;
+        width: 350px;
+
+    }
+    .ibox{
+        margin: -100px 496px;
+        padding: 54px 67px;
+        margin-bottom: -479px;
+        height: 350px;
+        width: 300px;
+    }
+    .abox{
+        margin: 55px 983px;
+        padding: 63px 63px;
+        height: 350px;
+        width: 300px;
+    }
     
-    
+     */
     
     
     /* cources Section */
@@ -333,8 +403,9 @@
     #cources-section::before{
      content: "";
      position: absolute;
-     background: url('./images/img19.png');
-     /* background-color: blanchedalmond; */
+     /* background: url('./images/img36.jpg'); */
+    
+     background-color: blanchedalmond;
      width: 100%;
      height: 100%;
      z-index: -1;
@@ -368,20 +439,46 @@
         /* background: url('./images/img26.jpg!w700wp') no-repeat;
         background-size: cover; */
         /* background-color: rgba(0, 0, 0, 0.5); */
-        background-color: #ddd;
-        height: 2230px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 1430px;
+        width: 330px;
+       
+    
+    }
+
+     
+    #cources .cbox:hover{ 
+        border: 4px solid rgb(115, 114, 114);
+        padding: 1px;
+        margin: 1px 10px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+        /* background: url('./images/img26.jpg!w700wp') no-repeat;
+        background-size: cover; */
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        background-color: rgba(255, 248, 248, 0.5);
+        height: 1430px;
         width: 330px;
        
     
     }
     
     #cources .cbox img{ 
-       height: 100px;
-       width: 100px;
+       height: 50px;
+       width: 120px;
        margin: auto;
        display: block;
        border-radius: 10px;
        border-color: #fbfbfb;
+    }
+    #cources .cbox img:hover{ 
+       height: 50px;
+       width: 120px;
+       margin: auto;
+       display: block;
+       border-radius: 10px;
+       border-color: #fbfbfb;
+       cursor: pointer;
     }
     
     #cources .cbox p{
@@ -407,7 +504,8 @@
     #client-section::before{
      content: "";
      position: absolute;
-     background: url('./images/img17.webp');
+     background: url('./images/img29.jpg') no-repeat;
+     background-size: cover;
      width: 100%;
      height: 100%;
      z-index: -1;
@@ -430,6 +528,12 @@
         width: 100px;
         border-radius: 15px;
     }
+    #clients img:hover{
+        height: 80px;
+        width: 100px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
     
     
     /* Contact Section */
@@ -442,8 +546,8 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        opacity: 0.8;
-        background: url('./images/img10.jpeg') no-repeat ;
+        opacity: 1;
+        background: url('./images/img32.jpg') no-repeat ;
         background-size: cover;
     
     }
@@ -478,7 +582,7 @@
 
 
     .icons{
-        border: 4px solid rgb(255, 0, 0);
+       
         padding: 1px;
         margin: 0px 819px;
         border-radius: 28px;
@@ -509,13 +613,17 @@
         font-family: 'Bree Serif', serif;
         font-size: 3.8rem;
         padding: 12px;
+        color: blanchedalmond;
     }
     
     .h-secondary{
         font-family: 'Bree Serif', serif;
-        font-size: 2.3rem;
+        font-size: 1.3rem;
         padding: 12px;
+        color: #95b4e6;
     }
+
+   
     
     .h-third{
         font-family: 'Bree Serif', serif;
@@ -528,7 +636,7 @@
         font-family: 'Bree Serif', serif;
         font-size: xx-large;
         padding: 30px 150px;
-        color: #ffffff;
+        color: #53abab;
         align-items: center;
     }
 
@@ -594,7 +702,17 @@
         opacity: 0.7;
     }
     
+.search{
 
+    float: right;
+    color: white;
+    padding: 2px 260px;
+}
+#navbar input{
+   border: 2px solid rgb(42, 235, 42);
+   border-radius: 10px;
+   padding: 2px 17px;
+}
     
     
     
@@ -604,16 +722,24 @@
 
 
 <body>
+
+    <div id="logo">
+        <img src="./images/img2.jpg" alt="Rahman Coding Classes.com">
+    </div>
     <nav id="navbar">
-        <div id="logo">
-            <img src="./images/img2.jpg" alt="Rahman Coding Classes.com">
-        </div>
+        
         <ul>
             <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#services-container">Educators</a></li>
+            <li class="item"><a href="#educators-container">Educators</a></li>
             <li class="item"><a href="#cources-section">Cources</a></li>
             <li class="item"><a href="#client-section">clients</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="#contact">Contact_Us</a></li>
+
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="This is search box">
+
+            </div>
+
         </ul>
     </nav>
 
@@ -648,41 +774,61 @@
 
 
 
-    <section id="services-container">
-        <h1 class="h-primary center">Our Top Educators</h1>
-        <div id="services">
+    <section id="educators-container">
+        <h1 class="h-primary-edu center">Our Top Educators</h1>
+        <div id="educators">
             <div class="box">
                 <img src="./images/img1.png.jpg" alt="">
-                <h2 class="h-secondary center"><i>Waheed Khan</i> 
+                <h2 class="h-secondary-edu center"><i>Waheed Khan</i> 
                 <br />
+                <br>
+                <br>
                  FrontEnd and BackEnd</h2>
 
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                <!-- <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
                     sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    voluptas beatae facilis labore, omnis sint quae eum.</p> -->
             </div>
+
+
+
+
             <div class="box">
                 <img src="./images/img11.jpg" alt="">
-                <h2 class="h-secondary center"><i>Inamur Rahman</i>
+                <h2 class="h-secondary-edu center"><i>Inamur Rahman</i>
                 <br />
+                <br>
+                <br>
                 Full Stack Developer</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                <!-- <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
 
                     sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    voluptas beatae facilis labore, omnis sint quae eum.</p> -->
             </div>
+
+
+
+
+
             <div class="box">
                 <img src="./images/img12.jpg" alt="">
-                <h2 class="h-secondary center"><i>Altaf Khan</i>
+                <h2 class="h-secondary-edu center"><i>Altaf Khan</i>
                 <br />
+                <br>
+                <br>
                 DevOps</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                <!-- <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
                     sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    voluptas beatae facilis labore, omnis sint quae eum.</p> -->
             </div>
+
+
+
+
+
         </div>
 
 
@@ -710,9 +856,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
+                
                 <h3 class="h-third center"><i>Basics</i> </h3>
                 <img src="./images/html.webp" alt="">
                 <br>
@@ -721,8 +865,7 @@
                 <img src="./images/js.png" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <h2 class="h-third center"><i>FrameWorks</i> </h2>
                 <img src="./images/react.avif" alt="">
                 <br>
@@ -731,8 +874,7 @@
                 <img src="./images/angular.jpg" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+               
                 <h2 class="h-third center"><i>Styles</i> </h2>
                 <img src="./images/material ui.png" alt="">
                 <br>
@@ -750,9 +892,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
+               
                 <h3 class="h-third center"><i>Technology</i> </h3>
                 <img src="./images/python.jpg" alt="">
                 <br>
@@ -777,9 +917,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
+               
                 <h3 class="h-third center"><i>RDBMS</i> </h3>
                 <img src="./images/mssql.jpg" alt="">
                 <br>
@@ -788,8 +926,7 @@
                 <img src="./images/postgres.webp" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <h3 class="h-third center"><i>No SQL</i> </h3>
                 <img src="./images/mongo.gif" alt="">
                 <br>
@@ -800,16 +937,14 @@
                 <img src="./images/elasticsearch.png" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <h3 class="h-third center"><i>Graph</i> </h3>
                 <img src="./images/neo4j.jpg" alt="">
                 <br>
                 <img src="./images/arangodb.jpg" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <h3 class="h-third center"><i>Message Queue</i> </h3>
                 <img src="./images/kafka.webp" alt="">
                 <br>
@@ -828,9 +963,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
+               
                 <h3 class="h-third center"><i>Infrastructure</i> </h3>
                 <img src="./images/nginx.jpg" alt="">
                 <br>
@@ -839,8 +972,7 @@
                 <img src="./images/azure.png" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <h3 class="h-third center"><i>Automation</i> </h3>
                 <img src="./images/ansible.png" alt="">
                 <br>
@@ -849,8 +981,7 @@
                 <img src="./images/jenkins.png" alt="">
                 <br>
                 <br>
-                <br>
-                <br>
+                
                 <h3 class="h-third center"><i>Virtualization</i> </h3>
                 <img src="./images/docker.webp" alt="">
                 <br>
@@ -886,17 +1017,21 @@
 
 
             <div class="client-item">
-                <img src="./images/img13.png" alt="Our Client">
+                <!-- <img src="./images/img13.png" alt="Our Client"> -->
+                <a href="https://www.microsoft.com" target="_blank"><img src="./images/img13.png"></a>
             </div>
             <div class="client-item">
-                <img src="./images/img14.png" alt="Our Client">
+                <!-- <img src="./images/img14.png" alt="Our Client"> -->
+                <a href="https://www.amazon.in" target="_blank"><img src="./images/img14.png"></a>
             </div>
           
             <div class="client-item">
-                <img src="./images/img15.jpeg" alt="Our Client">
+                <!-- <img src="./images/img15.jpeg" alt="Our Client"> -->
+                <a href="https://www.google.com" target="_blank"><img src="./images/img15.jpeg"></a>
             </div>
             <div class="client-item">
-                <img src="./images/img16.jpeg" alt="Our Client">
+                <!-- <img src="./images/img16.jpeg" alt="Our Client"> -->
+                <a href="https://www.nvidia.com" target="_blank"><img src="./images/img16.jpeg"></a>
             </div>
           
 
@@ -1056,12 +1191,12 @@ function closeForm() {
 
         <div class="icons">
 
-            <h2 class="h-fourth"><i>Our_Social_Networks</i></h2>
+            <h2 class="h-fourth">Our Social Networks</h2>
  
                          <!-- <a href="https://www.google.com"> <img src="./images/angular.jpg" width="15" height="15"> </a> -->
                          <a href="https://www.facebook.com/headboywaheed/" target="_blank"><img src="./images/fb logo.png" width="40" height="40"></a>
                            <a href="https://www.instagram.com/_therahman/" target="_blank"><img src="./images/instagram.webp" width="40" height="40"></a>
-                           <a href="https://www.snapchat.com/add/waheedkhan065?share_id=I2S6nvLJKK8&locale=en-IN" target="_blank"><img src="./images/snap.jpeg" width="40" height="40"></a>
+                           <a href="https://www.snapchat.com/add/iamwaheed_khan?share_id=63X-GMeVMbc&locale=en-US" target="_blank"><img src="./images/snap.jpeg" width="40" height="40"></a>
                            <a href="https://github.com/waheedkhan70" target="_blank"><img src="./images/github.png" width="40" height="40"></a>
                            <a href="https://t.me/waheedkhan066" target="_blank"><img src="./images/tele.png" width="40" height="40"></a>
                            <a href="https://www.linkedin.com/in/iamwaheedkhan/" target="_blank"><img src="./images/linkedin.jpg" width="40" height="40"></a>
