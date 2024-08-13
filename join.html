@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Application Form</title>
+    <script type="module" src="script.js"></script>
     <style>
 
-
+/* 
 body{
 
     background-image: url(./images/img27.png);
     background-size: cover;
-}
+} */
 
 
     span{
-      color: rgb(31, 220, 72);
+      color: rgb(255, 255, 255);
       font-size: 25px;
-      background-color: rgba(0, 0, 0, 0.5);
-    
+      background-color: rgba(27, 235, 238, 0.5);
+    border: 3px solid black;
       height: 150px;
-      width: 100px;
+      max-width: 100%;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
-  margin-left: 650px;
+  margin-left: 12px;
     }
    .redbag{
-     background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(33, 242, 242, 0.5);
   /* background-image: url("./images/img23.jpg")  ;  */
   background-size: cover;
       color: rgb(255, 255, 255);
@@ -38,13 +39,14 @@ body{
             padding: 10px;
             padding-right: -100px;
             padding-left: 20px;
-        border-radius: 8px;
+        border-radius: 15px;
         margin-top: 50px;
         margin-bottom: 50px;
         margin-left: 570px;
         margin-right: 50px;
         width: 25%;
         text-decoration: none;
+        border: 4px solid black;
       
       }
 
@@ -63,18 +65,82 @@ body{
 #logo img{
     
     margin: 3px 650px;
-    border-radius: 70px;
+    border-radius: 80px;
+    border: 3px solid grey;
    
 }
-   
-#country{
 
+
+
+
+
+body, html, #app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
+
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+}
+
+#app h1 {
+  --fontSize: 60px;
+  --lineHeight: 80px;
+  width: auto;
+  height: calc(2 * var(--lineHeight));
+  line-height: var(--lineHeight);
+  margin: calc(50vh - var(--lineHeight)) auto 0;
+  font-size: var(--fontSize);
+  text-transform: uppercase;
+}
+
+#app a {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+
+
+
+.resetbutton {
+    cursor: pointer;
+    background-color: rgb(234, 0, 0);
+    color: #000;
+    border: 2px solid white;
+    box-shadow: 2px 3px 20px 4px;
+}
+
+
+.submitbutton {
+    cursor: pointer;
+    background-color: rgb(0, 255, 21);
+    color: #000;
+    border: 2px solid white;
+    box-shadow: 2px 3px 20px 4px;
+}
+
    
+
    </style>
 </head>
 
-<body>
+<body id="app">
+    <div id="hero">
    
     <!-- <form action="backend.php"> -->
         <form onsubmit="emailSend(); reset(); return false;">
@@ -98,29 +164,28 @@ body{
    <br />
    <br />
         <div>   
-      <input type="text" name="myName"    placeholder="Enter ur First Name" id="name"required>
+     <input type="text" name="myName"    placeholder="Enter ur First Name" id="name"required>
         </div>
-           <br />
+          
         <div>   
-       <input type="text" name="myName"    placeholder="Enter ur Second Name" id="name"required>
+      <input type="text" name="myName"    placeholder="Enter ur Second Name" id="name"required>
         </div>
-           <br />
+          
         <div>   
-       <input type="text" name="myName"    placeholder="Enter ur Username" id="name"required>
+      <input type="text" name="myName"    placeholder="Enter ur Username" id="name"required>
         </div>
-        <br>
+       
   <div>
-           <input type="email"  placeholder="Enter ur Email id"   name="myEmail"required>
+          <input type="email"  placeholder="Enter ur Email id"   name="myEmail"required>
         </div>
     
-    <br>
 <div>
-       <input type="text"   placeholder="Enter ur address"   name="name"required>
+   <input type="text"   placeholder="Enter ur address"   name="name"required>
     </div>
 
-        <br>
+      
         <div>
-           <input type="date"  placeholder="DOB"  name="mmyDate"required >
+          <input type="date"  placeholder="DOB"  name="mmyDate"required >
         </div>
         <!-- <br>
         <br>
@@ -128,7 +193,7 @@ body{
             Are you eligible?: <input type="checkbox" name="myEligibility" checked>
         </div>
          -->
-   <br>
+ <br>
 
 
 
@@ -363,7 +428,7 @@ body{
             <input type="number" name="" placeholder="Mobile number" maxlength="10"required>
         </div>
         
-        <br>
+    
         <div>
             Gender:  Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
             Other <input type="radio" name="myGender">
@@ -374,9 +439,9 @@ body{
 
         <div>
          
-            <input type="reset" value="Reset Now">
+            <input class="resetbutton" type="reset" value="Reset Now">
 <!--                <input type="submit" value="Join Now"> -->
-            <input  type="button" onclick="window.location.href = 'joined.html';" value="Join Now"/>
+            <input  class="submitbutton" type="button" onclick="window.location.href = 'joined.html';" value="Join Now"/>
         </div>
 <br> 
         <div>
@@ -400,6 +465,9 @@ body{
 
 <script src="email.js"></script>
 
+
+
+    </div>
 </body>
 
 
