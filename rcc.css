@@ -181,11 +181,11 @@ body{
       flex-direction: column;
   }
   
-  #educators .box { 
+  /* #educators .box { 
       padding: 14px;
       margin: 2px 0px; 
       margin-bottom: 20px;
-  }
+  } */
   
   /* Clients section */
   #clients{
@@ -216,6 +216,7 @@ body{
   
   /* CSS Reset */
   *{
+    box-sizing: border-box;
       margin: 0;
       padding: 0;
   }
@@ -223,6 +224,8 @@ body{
   html{
       scroll-behavior: smooth;
   }
+
+  
   
   /* CSS Variables */
   :root{
@@ -262,8 +265,6 @@ body{
       margin: 3px 6px;
       border-radius: 50px;
       border: 4px solid rgb(0, 0, 0);
-      
-      
   }
 
   
@@ -314,6 +315,7 @@ body{
       content: "";
       position: absolute;
       background: url('./images/img18.1.png') no-repeat center center/cover;
+      background-attachment: fixed;
       height: 642px;
       top:0px;
       left:0px;
@@ -335,36 +337,32 @@ body{
       font-family: 'Bree Serif', serif;
   }
   /* educators Section */
-  #educators{
-      margin: 34px;
-      display: flex;
-      
+  #educator {
+    padding: 34px;
+    margin: 2px 830px;
+
+    border: 2px solid cyan;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 245, 239, 0.2);
+   width: 300px;
+  flex-direction: column;
+  display: flex;
   }
   
   
 
-  #educators .box{ 
-      border: 4px solid rgb(101, 33, 33);
-      padding: 34px;
-      margin: 2px 830px;
-      border-radius: 28px;
-      margin-bottom: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-     width: 300px;
-    flex-direction: row;
-    display: flex;
-  
-  }
+
 
   #educators .box:hover{ 
-      border: 4px solid rgb(3, 155, 16);
-      padding: 34px;
-      margin: 2px 830px;
-      border-radius: 28px;
-      margin-bottom: 20px;
-      background-color: rgba(219, 241, 222, 0.8);
-     width: 300px;
-    flex-direction: row;
+      border: 2px solid rgb(3, 153, 155);
+      /* padding: 34px; */
+      /* margin: 2px 830px; */
+      /* border-radius: 28px; */
+      /* margin-bottom: 20px; */
+      background-color: rgba(84, 245, 239, 0.8);
+     /* width: 300px; */
+    flex-direction: column;
     display: flex;
     cursor: pointer;
    
@@ -389,10 +387,49 @@ body{
   #educators-container{
       background: url('./images/img19.png') no-repeat;
       background-size: cover;
+      background-attachment: fixed;
       color: blanchedalmond;
       display: grid;
       opacity: 0.8;
   }
+
+  
+   /* 
+   #educator1 {
+    padding: 34px;
+    margin: 2px 830px;
+
+    border: 4px solid cyan;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 245, 239, 0.2);
+   width: 300px;
+  flex-direction: row;
+  display: flex;
+  }
+  #educator2 {
+    padding: 34px;
+    margin: 2px 830px;
+    border: 4px solid cyan;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 245, 239, 0.2);
+   width: 300px;
+  flex-direction: row;
+  display: flex;
+  }
+  #educator3 {
+    padding: 34px;
+    margin: 2px 830px;
+    border: 4px solid cyan;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 245, 239, 0.2);
+   width: 300px;
+  flex-direction: row;
+  display: flex;
+  }
+  */
 
   .h-primary-edu{
       font-family: 'Bree Serif', serif;
@@ -408,14 +445,14 @@ body{
       font-family: 'Bree Serif', serif;
       font-size: 1.2rem;
       padding: 12px;
-      color: #f96161;
+      color: #000000;
   }
 
   .h-secondary-edu:hover{
       font-family: 'Bree Serif', serif;
       font-size: 1.2rem;
       padding: 12px;
-      color: #2fea2c;
+      color: #484747;
   }
 
 
@@ -452,13 +489,17 @@ body{
   #cources-section::before{
    content: "";
    position: absolute;
-   /* background: url('./images/img36.jpg'); */
+   background: url('./images/courses.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* background-position: center; */
+   background-attachment: fixed;
   
-   background-color: rgba(219, 241, 222, 0.8);
+   /* background-color: rgba(219, 248, 223, 0.8); */
    width: 100%;
    height: 100%;
    z-index: -1;
-   opacity: 1;
+   opacity: 0.8;
   }
   
   #cources{
@@ -480,7 +521,7 @@ body{
   
   
   #cources .cbox{ 
-      border: 4px solid rgb(115, 114, 114);
+      border: 2px solid rgb(255, 183, 0);
       padding: 1px;
       margin: 1px 10px;
       border-radius: 28px;
@@ -488,7 +529,7 @@ body{
       /* background: url('./images/img26.jpg!w700wp') no-repeat;
       background-size: cover; */
       /* background-color: rgba(0, 0, 0, 0.5); */
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(238, 185, 115, 0.2);
       height: 940px;
       width: 330px;
      
@@ -497,7 +538,7 @@ body{
 
    
   #cources .cbox:hover{ 
-      border: 4px solid rgb(115, 114, 114);
+    border: 2px solid rgb(255, 183, 0);
       padding: 1px;
       margin: 1px 10px;
       border-radius: 28px;
@@ -505,7 +546,7 @@ body{
       /* background: url('./images/img26.jpg!w700wp') no-repeat;
       background-size: cover; */
       /* background-color: rgba(0, 0, 0, 0.5); */
-      background-color: rgba(255, 248, 248, 0.5);
+      background-color: rgba(238, 185, 115, 0.627);
       height: 940px;
       width: 330px;
      
@@ -553,13 +594,14 @@ body{
   #client-section::before{
    content: "";
    position: absolute;
-   /* background: url('./images/img29.jpg') no-repeat;
-   background-size: cover; */
+   background: url('./images/client1.jpg') no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
    background-color: rgba(0, 0, 0, 0.5);
    width: 100%;
    height: 100%;
    z-index: -1;
-   opacity: 0.9;
+   opacity: 0.7;
    
   }
   
@@ -580,7 +622,7 @@ body{
       height: 80px;
       width: 100px;
       border-radius: 15px;
-      border: 5px solid rgb(0, 0, 0);
+      border: 3px solid rgb(0, 0, 0);
       background: transparent;
   }
   #clients img:hover{
@@ -607,6 +649,7 @@ body{
       opacity: 1;
       background: url('./images/img32.jpg') no-repeat ;
       background-size: cover;
+      /* background-attachment: fixed; */
   
   }
   #contact-box{
@@ -642,15 +685,15 @@ body{
   .icons{
      
       padding: 1px;
-      margin: 0px 819px;
-      border-radius: 28px;
+      margin: -387px -7px;
+      /* border-radius: 28px; */
       margin-bottom: 20px;
       /* background: url('./images/img26.jpg!w700wp') no-repeat;
       background-size: cover; */
       /* background-color: rgba(0, 0, 0, 0.5); */
-      background-color: rgb(0, 0, 0);
-      height: 165px;
-      width: 42%;
+      /* background-color: rgb(0, 0, 0); */
+      /* height: 165px; */
+      width: 24%;
 
   }
   
@@ -662,7 +705,7 @@ body{
       background: black;
       color: rgb(255, 255, 255);
       padding: 36px 20px;
-      height: 170px;
+      height: 260px;
   }
   
   /* Utility Classes */
@@ -692,9 +735,10 @@ body{
   }
   .h-fourth{
 
-      font-family: 'Bree Serif', serif;
-      font-size: xx-large;
-      padding: 30px 150px;
+      /* font-family: 'Bree Serif', serif; */
+      font-family: "Anonymous Pro", monospace;
+      font-size: large;
+      padding: 30px 57px;
       color: #53abab;
       align-items: center;
   }
@@ -728,12 +772,15 @@ body{
       text-align: left;
       width: 462px;
       border: 2px solid rgb(0, 0, 0);
-      margin: 0px 12px;
+      margin: 158px 12px;
+      padding: 2px 90px;
 
   }
   
   .fcenter #fc{
-      margin: 2px 44px;
+      margin: 2px 8px;
+      position: relative;
+      left: -96px;
 
   
   }
@@ -755,7 +802,7 @@ body{
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 2px 18px;
+    margin: 2px 0px;
   
   }
   
